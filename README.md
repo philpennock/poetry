@@ -28,4 +28,7 @@ Think carefully before going this route.  But if you're going to, then here's
 some trivial sample data, consisting of a very few poems, which can help you
 test the workflows.
 
+Pushes to this repo are automatically built at Docker Hub into the image
+`philpennock/poetry`: <https://hub.docker.com/r/philpennock/poetry/>
+
 ---
