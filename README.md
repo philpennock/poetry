@@ -11,6 +11,11 @@ That's it.
 
 ---
 
+Pushes to this repo are automatically built at Docker Hub into the image
+`philpennock/poetry`: <https://hub.docker.com/r/philpennock/poetry/>
+
+---
+
 We generate a Docker image.  This is silly for data this small.
 
 Normally you use a Docker image to hold "something executable", to treat a
@@ -28,7 +33,8 @@ Think carefully before going this route.  But if you're going to, then here's
 some trivial sample data, consisting of a very few poems, which can help you
 test the workflows.
 
-Pushes to this repo are automatically built at Docker Hub into the image
-`philpennock/poetry`: <https://hub.docker.com/r/philpennock/poetry/>
+Ideally, you want to use a `VOLUME` directive in your Dockerfile, and be able
+to satisfy the source of that Volume directly from a Docker image.  Instead,
+you'll probably need some kind of workaround.
 
 ---

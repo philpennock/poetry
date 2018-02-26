@@ -5,9 +5,13 @@
 # But for much larger data-sets, being able to use Docker Image
 # caching pays off, as you just pull when there's a difference.
 #
+# In an ideal world, you could directly specify that a Docker
+# VOLUME come from a Docker image, or have another mechanism for
+# sharing Containers if not that.
+#
 FROM scratch
 COPY poems/* /
 ENTRYPOINT ["/nonexistent"]
 
-LABEL maintainer="phil pennock"
+LABEL maintainer="Phil Pennock"
 LABEL comment="public-domain poetry sample data set"
